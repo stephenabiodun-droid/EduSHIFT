@@ -17,6 +17,7 @@ export default function App() {
         <Route path="about" element={<Placeholder title="About Us" />} />
         <Route path="fellowship" element={<Placeholder title="Fellowship Program" />} />
         <Route path="events" element={<Events />} />
+        <Route path="training" element={<Placeholder title="Training and Development" />} />
         <Route path="partners" element={<Placeholder title="Partners" />} />
         <Route path="contact" element={<Placeholder title="Contact Us" />} />
         <Route path="donate" element={<Placeholder title="Donate" />} />

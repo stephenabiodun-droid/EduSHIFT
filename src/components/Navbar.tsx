@@ -12,6 +12,7 @@ export function Navbar() {
   const links = [
     { name: "About", path: "/about" },
     { name: "Fellowship", path: "/fellowship" },
+    { name: "Training", path: "/training" },
     { name: "Events", path: "/events" },
     { name: "Partners", path: "/partners" },
     { name: "Contact", path: "/contact" },
