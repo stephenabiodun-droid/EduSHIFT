@@ -5,8 +5,16 @@ import { Logo } from "@/components/Logo";
 
 export function Footer() {
   return (
-    <footer className="border-t bg-primary-50 text-primary-900 py-12 md:py-16">
-      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <footer className="relative border-t bg-primary-50 text-primary-900 py-12 md:py-16 overflow-hidden">
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2670&auto=format&fit=crop" 
+          alt="African professionals in workshop" 
+          className="w-full h-full object-cover opacity-5"
+          referrerPolicy="no-referrer"
+        />
+      </div>
+      <div className="container relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 lg:gap-12">
           <div className="md:col-span-1 space-y-4">
             <Link to="/" className="inline-block w-40">
@@ -32,8 +40,8 @@ export function Footer() {
           <div>
             <h3 className="font-heading text-lg font-semibold mb-4 text-primary-900">Contact Us</h3>
             <address className="not-italic space-y-3 text-sm text-primary-800/80">
-              <p>C/O ELPIS INTERNATIONAL SCHOOL</p>
-              <p>High school in Dutse, Nigeria</p>
+              <p>No 1 Lane 6, Bayan Katanga Gidan Radio G9 Area,</p>
+              <p>Dutse, Jigawa State, Nigeria.</p>
               <p>+234 806 548 4653</p>
               <p><a href="mailto:info@edushiftlearning.org" className="hover:text-secondary-500 transition-colors">info@edushiftlearning.org</a></p>
             </address>

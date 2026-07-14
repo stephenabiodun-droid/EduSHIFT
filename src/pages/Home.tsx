@@ -45,8 +45,8 @@ export function Home() {
         {/* Background Decoration */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2670&auto=format&fit=crop" 
-            alt="Students in classroom" 
+            src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=2669&auto=format&fit=crop" 
+            alt="African adults in formal training" 
             className="w-full h-full object-cover opacity-20"
             referrerPolicy="no-referrer"
           />

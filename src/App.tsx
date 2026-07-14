@@ -2,6 +2,13 @@ import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import { Home } from "./pages/Home";
 import { Events } from "./pages/Events";
+import { About } from "./pages/About";
+import { Fellowship } from "./pages/Fellowship";
+import { Training } from "./pages/Training";
+import { Partners } from "./pages/Partners";
+import { Contact } from "./pages/Contact";
+import { Apply } from "./pages/Apply";
+import { Donate } from "./pages/Donate";
 
 const Placeholder = ({ title }: { title: string }) => (
   <div className="flex min-h-[50vh] items-center justify-center">
@@ -14,15 +21,15 @@ export default function App() {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="about" element={<Placeholder title="About Us" />} />
-        <Route path="fellowship" element={<Placeholder title="Fellowship Program" />} />
+        <Route path="about" element={<About />} />
+        <Route path="fellowship" element={<Fellowship />} />
         <Route path="events" element={<Events />} />
-        <Route path="training" element={<Placeholder title="Training and Development" />} />
-        <Route path="partners" element={<Placeholder title="Partners" />} />
-        <Route path="contact" element={<Placeholder title="Contact Us" />} />
-        <Route path="donate" element={<Placeholder title="Donate" />} />
-        <Route path="apply" element={<Placeholder title="Apply Now" />} />
-        <Route path="register" element={<Placeholder title="Register Now" />} />
+        <Route path="training" element={<Training />} />
+        <Route path="partners" element={<Partners />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="donate" element={<Donate />} />
+        <Route path="apply" element={<Apply />} />
+        <Route path="register" element={<Apply />} />
       </Route>
     </Routes>
   );
