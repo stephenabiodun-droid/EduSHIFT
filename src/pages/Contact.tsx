@@ -52,7 +52,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold mb-1">Email Address</h3>
-                  <p className="text-primary-100">info@edushiftlearning.org</p>
+                  <p className="text-primary-100">edushiftlearning@gmail.com</p>
                 </div>
               </div>
             </div>
@@ -62,13 +62,14 @@ export function Contact() {
           <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-primary-100">
             <h2 className="text-2xl md:text-3xl font-bold font-heading text-primary-900 mb-8">Send us a Message</h2>
             
-            <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+            <form className="space-y-6" action="mailto:edushiftlearning@gmail.com" method="POST" encType="text/plain">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label htmlFor="firstName" className="text-sm font-medium text-primary-900">First Name</label>
                   <input 
                     type="text" 
                     id="firstName" 
+                    name="firstName"
                     className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition-all"
                     placeholder="John"
                   />
@@ -78,6 +79,7 @@ export function Contact() {
                   <input 
                     type="text" 
                     id="lastName" 
+                    name="lastName"
                     className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition-all"
                     placeholder="Doe"
                   />
@@ -89,6 +91,7 @@ export function Contact() {
                 <input 
                   type="email" 
                   id="email" 
+                  name="email"
                   className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition-all"
                   placeholder="john@example.com"
                 />
@@ -99,6 +102,7 @@ export function Contact() {
                 <input 
                   type="text" 
                   id="subject" 
+                  name="subject"
                   className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition-all"
                   placeholder="How can we help?"
                 />
@@ -108,6 +112,7 @@ export function Contact() {
                 <label htmlFor="message" className="text-sm font-medium text-primary-900">Message</label>
                 <textarea 
                   id="message" 
+                  name="message"
                   rows={4}
                   className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition-all resize-none"
                   placeholder="Tell us more about your inquiry..."

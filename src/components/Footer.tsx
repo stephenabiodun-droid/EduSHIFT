@@ -43,16 +43,17 @@ export function Footer() {
               <p>No 1 Lane 6, Bayan Katanga Gidan Radio G9 Area,</p>
               <p>Dutse, Jigawa State, Nigeria.</p>
               <p>+234 806 548 4653</p>
-              <p><a href="mailto:info@edushiftlearning.org" className="hover:text-secondary-500 transition-colors">info@edushiftlearning.org</a></p>
+              <p><a href="mailto:edushiftlearning@gmail.com" className="hover:text-secondary-500 transition-colors">edushiftlearning@gmail.com</a></p>
             </address>
           </div>
 
           <div>
             <h3 className="font-heading text-lg font-semibold mb-4 text-primary-900">Newsletter</h3>
             <p className="text-sm text-primary-800/80 mb-4">Stay updated with our latest shifts in African education.</p>
-            <form className="flex flex-col space-y-2" onSubmit={(e) => e.preventDefault()}>
+            <form className="flex flex-col space-y-2" action="mailto:edushiftlearning@gmail.com" method="POST" encType="text/plain">
               <Input 
                 type="email" 
+                name="email"
                 placeholder="Your Email" 
                 className="bg-white border-primary-200 text-primary-900 placeholder:text-gray-400 focus-visible:ring-accent-500 rounded-sm"
               />

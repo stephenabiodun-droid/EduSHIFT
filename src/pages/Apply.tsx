@@ -17,7 +17,7 @@ export function Apply() {
         </div>
 
         <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-primary-100">
-          <form className="space-y-8" onSubmit={(e) => e.preventDefault()}>
+          <form className="space-y-8" action="mailto:edushiftlearning@gmail.com" method="POST" encType="text/plain">
             
             {/* Program Selection */}
             <div className="space-y-4">
@@ -66,6 +66,7 @@ export function Apply() {
                     <input 
                       type="text" 
                       id="fullName" 
+                      name="fullName"
                       className="w-full pl-10 px-4 py-3 rounded-xl border border-gray-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition-all"
                       placeholder="Jane Doe"
                     />
@@ -81,6 +82,7 @@ export function Apply() {
                     <input 
                       type="email" 
                       id="email" 
+                      name="email"
                       className="w-full pl-10 px-4 py-3 rounded-xl border border-gray-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition-all"
                       placeholder="jane@example.com"
                     />
@@ -96,6 +98,7 @@ export function Apply() {
                     <input 
                       type="tel" 
                       id="phone" 
+                      name="phone"
                       className="w-full pl-10 px-4 py-3 rounded-xl border border-gray-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition-all"
                       placeholder="+234..."
                     />
@@ -107,6 +110,7 @@ export function Apply() {
                   <input 
                     type="text" 
                     id="location" 
+                    name="location"
                     className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition-all"
                     placeholder="Dutse, Jigawa State"
                   />
@@ -123,6 +127,7 @@ export function Apply() {
                   <input 
                     type="text" 
                     id="institution" 
+                    name="institution"
                     className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition-all"
                     placeholder="School Name"
                   />
@@ -133,6 +138,7 @@ export function Apply() {
                   <input 
                     type="text" 
                     id="role" 
+                    name="role"
                     className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition-all"
                     placeholder="e.g. Science Teacher, Principal"
                   />
@@ -142,6 +148,7 @@ export function Apply() {
                   <label htmlFor="motivation" className="text-sm font-medium text-primary-900">Why do you want to join this program?</label>
                   <textarea 
                     id="motivation" 
+                    name="motivation"
                     rows={4}
                     className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition-all resize-none"
                     placeholder="Tell us about your goals and expectations..."
