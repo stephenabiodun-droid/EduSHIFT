@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="3" dy="3" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Row 1 -->
+  <rect x="240" y="20" width="100" height="100" fill="#186742" filter="url(#shadow)" />
+  
+  <!-- Row 2 -->
+  <rect x="20" y="130" width="100" height="100" fill="#1f2c4b" filter="url(#shadow)" />
+  <rect x="130" y="130" width="100" height="100" fill="#1f2c4b" filter="url(#shadow)" />
+  
+  <!-- Row 3 -->
+  <rect x="20" y="240" width="100" height="100" fill="#186742" filter="url(#shadow)" />
+  <rect x="130" y="240" width="100" height="100" fill="#1f2c4b" filter="url(#shadow)" />
+</svg>
